@@ -59,7 +59,6 @@ class HmButton: UIButton {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        initializaView()
     }
     
     /// 按钮图片和文字位置类型
@@ -79,12 +78,6 @@ class HmButton: UIButton {
         $0.isHidden = true
         return $0
     } (UIView())
-
-    private func initializaView() {
-        distance = 0.0
-        bestLeftDistance = 0.0
-        bestRightDistance = 0.0
-    }
     
     override func layoutSubviews() {
         super.layoutSubviews()
